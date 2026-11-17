@@ -41,12 +41,12 @@ test('costs.js: ticks per await and return form', () => {
 test('interleave.js: two loops take turns, the sleeper waits for a task', () => {
   assert.deepEqual(run('interleave.js'), [
     'task 0  tick 0  script: end',
-    'task 0  tick 1  a: step 1',
-    'task 0  tick 1  b: step 1',
-    'task 0  tick 2  a: step 2',
-    'task 0  tick 2  b: step 2',
-    'task 0  tick 3  a: step 3',
-    'task 0  tick 3  b: step 3',
+    'task 0  tick 1  a: i=1',
+    'task 0  tick 1  b: i=1',
+    'task 0  tick 2  a: i=2',
+    'task 0  tick 2  b: i=2',
+    'task 0  tick 3  a: i=3',
+    'task 0  tick 3  b: i=3',
     'task 1  tick 1  sleeper: woke up',
   ]);
 });

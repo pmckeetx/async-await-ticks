@@ -3,7 +3,7 @@ import { log, later } from '../trace.js';
 async function worker(name) {
   for (let i = 1; i <= 3; i++) {
     await null;
-    log(`${name}: step ${i}`);
+    log(`${name}: i=${i}`);
   }
 }
 
