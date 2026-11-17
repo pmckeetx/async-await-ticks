@@ -1,0 +1,12 @@
+{
+  "name": "async-await-ticks",
+  "version": "1.0.0",
+  "description": "Trace every line of a JavaScript async function to the task and microtask tick it runs on.",
+  "type": "module",
+  "license": "Apache-2.0",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "test": "node --test",
+    "examples": "for f in examples/*.js; do echo \"\\n$ node $f\"; node $f; done"
+  }
+}
