@@ -1,6 +1,6 @@
 # async-await-ticks
 
-Trace every line of a JavaScript async function to the task and microtask tick it runs on. Companion code for the post *How async/await works in JavaScript, tick by tick* (link to follow when it's live).
+Trace every line of a JavaScript async function to the task and microtask tick it runs on. Companion code for the post [How async/await works in JavaScript, tick by tick](https://dev.to/pmckeetx/how-asyncawait-works-in-javascript-tick-by-tick-1e20) on dev.to.
 
 `trace.js` is the whole tool: `log()` prints `task N  tick M` in front of each message, where the task counts timer callbacks and the tick counts hops through the microtask queue since that task began. `later()` is `setTimeout` that starts a new task in the trace.
 
